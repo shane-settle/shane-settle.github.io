@@ -24,11 +24,23 @@ description: >- # this means to ignore newlines until "baseurl:"
  Shane Settle's personal website.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: shane-settle-58a77562
 github_username:  shane-settle
+google_scholar: https://scholar.google.com/citations?user=X6EqGFoAAAAJ
+
+# Icon versions
+fontawesome:
+  version: "5.15.4"
+  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+academicons:
+  version: "1.9.1"
+  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="  
 
 # Build settings
+markdown: kramdown
 theme: minima
-plugins:
+
+gems:
   - jekyll-feed
 
 # Exclude from processing.
@@ -38,13 +50,13 @@ plugins:
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-#
-# exclude:
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
